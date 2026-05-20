@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-paw me-2"></i>PetPals
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pets">Pets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adopt">Adopt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Find Your Perfect Companion</h1>
+            <p>Adopt a furry friend who will love you unconditionally. Every pet deserves a forever home.</p>
+            <a href="#pets" class="btn btn-light btn-lg px-5 py-3">Browse Pets</a>
+        </div>
+    </section>
+
+    <!-- Pets Section -->
+    <section id="pets" class="pets-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Available Pets</h2>
+            <div class="pets-grid">
+                <!-- Pet Card 1 -->
+                <div class="pet-card-wrapper">
+                    <div class="pet-card">
+                        <div class="pet-image" style="background-image: url('https://res.cloudinary.com/dj9ctjkb5/image/upload/v1764523318/img-1_sqynna.avif')">
+                            <span class="pet-badge">Dog</span>
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Max</h3>
+                            <p class="pet-breed">Golden Retriever • 2 years</p>
+                            <ul class="pet-info">
+                                <li><i class="fas fa-heart"></i>Loves cuddles</li>
+                                <li><i class="fas fa-running"></i>Active & playful</li>
+                                <li><i class="fas fa-users"></i>Great with kids</li>
+                            </ul>
+                            <button class="adopt-btn">
+                                <i class="fas fa-heart me-2"></i>Adopt Max
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pet Card 2 -->
+                <div class="pet-card-wrapper">
+                    <div class="pet-card">
+                        <div class="pet-image" style="background-image: url('https://res.cloudinary.com/dj9ctjkb5/image/upload/v1764523503/img-3_zi9r3y.avif')">
+                            <span class="pet-badge">Cat</span>
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Luna</h3>
+                            <p class="pet-breed">Persian • 1 year</p>
+                            <ul class="pet-info">
+                                <li><i class="fas fa-home"></i>Indoor cat</li>
+                                <li><i class="fas fa-paw"></i>Very affectionate</li>
+                                <li><i class="fas fa-clock"></i>Litter trained</li>
+                            </ul>
+                            <button class="adopt-btn">
+                                <i class="fas fa-heart me-2"></i>Adopt Luna
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pet Card 3 -->
+                <div class="pet-card-wrapper">
+                    <div class="pet-card">
+                        <div class="pet-image" style="background-image: url('https://res.cloudinary.com/dj9ctjkb5/image/upload/v1764523373/img-2_fwwuha.avif')">
+                            <span class="pet-badge">Dog</span>
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Buddy</h3>
+                            <p class="pet-breed">Beagle • 3 years</p>
+                            <ul class="pet-info">
+                                <li><i class="fas fa-utensils"></i>Food motivated</li>
+                                <li><i class="fas fa-walk"></i>Needs walks</li>
+                                <li><i class="fas fa-thumbs-up"></i>House trained</li>
+                            </ul>
+                            <button class="adopt-btn">
+                                <i class="fas fa-heart me-2"></i>Adopt Buddy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Form -->
+    <section id="adopt" class="adoption-section">
+        <div class="container">
+            <div class="container">
+                <h2 class="text-center mb-5">Ready to Adopt?</h2>
+                <p class="text-center mb-5">Fill out this form and our team will contact you within 24 hours.</p>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Preferred Pet Name">
+                        </div>
+                    </div>
+                    <textarea class="form-control" rows="5" placeholder="Tell us about yourself and why you'd like to adopt..."></textarea>
+                    <button type="submit" class="btn btn-light btn-lg w-100 adopt-btn" style="border-radius: 15px;">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Adoption Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h4 class="mb-4">PetPals Adoption Center</h4>
+            <p>Helping pets find their forever homes since 2025</p>
+            <div class="social-links mt-4">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2025 PetPals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
